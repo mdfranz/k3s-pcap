@@ -1,0 +1,162 @@
+digraph G {
+  "10.43.66.60
+(windmill-postgresql)" -> "10.42.0.55";
+  "10.43.66.60
+(windmill-postgresql)" -> "10.42.0.54
+(windmill-workers-native-7c89677f7b-8n942)";
+  "10.42.0.54
+(windmill-workers-native-7c89677f7b-8n942)" -> "10.42.2.10
+(windmill-postgresql-0)";
+  "10.42.0.55
+(windmill-workers-default-cfdd7f76c-64qvt)" -> "10.42.2.10
+(windmill-postgresql-0)";
+  "10.42.0.25
+(source-controller-6d597849c8-xwx6k)" -> "10.42.0.1";
+  "10.42.0.25
+(source-controller-6d597849c8-xwx6k)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.31
+(nats-0)" -> "10.42.0.1";
+  "10.42.0.31
+(nats-0)" -> "10.42.1.29
+(nats-1)";
+  "10.42.0.31
+(nats-0)" -> "10.42.0.30
+(nats-box-6bcc85cc6c-kbt98)";
+  "10.42.1.29
+(nats-1)" -> "10.42.0.31
+(nats-0)";
+  "10.42.1.6
+(instance-manager-8e1abdb45ab7a9a3811912f953d56da9)" -> "10.42.0.8
+(instance-manager-ef966218c1706378eb2e48ea06fe339e)";
+  "10.42.0.8
+(instance-manager-ef966218c1706378eb2e48ea06fe339e)" -> "10.42.2.6";
+  "10.42.0.8
+(instance-manager-ef966218c1706378eb2e48ea06fe339e)" -> "10.42.0.1";
+  "10.42.0.8
+(instance-manager-ef966218c1706378eb2e48ea06fe339e)" -> "10.42.1.6
+(instance-manager-8e1abdb45ab7a9a3811912f953d56da9)";
+  "10.42.0.8
+(instance-manager-ef966218c1706378eb2e48ea06fe339e)" -> "10.42.0.5
+(longhorn-manager-qd9ht)";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.12";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.9";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.13";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.3";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.14";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.5
+(longhorn-manager-qd9ht)";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.4
+(metrics-server-cdcc87586-b27f7)";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.25
+(source-controller-6d597849c8-xwx6k)";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.26
+(kustomize-controller-74fb56995-rkt64)";
+  "10.43.0.1
+(kubernetes)" -> "10.42.0.11
+(csi-snapshotter-774467fdc7-lkw2g)";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "10.42.0.10";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "10.42.0.8";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "10.42.0.1";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "10.42.1.4
+(longhorn-manager-j7dxl)";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "10.42.0.5
+(longhorn-manager-qd9ht)";
+  "10.42.0.5
+(longhorn-manager-qd9ht)" -> "10.42.2.5
+(longhorn-manager-fx9l2)";
+  "10.42.0.12
+(csi-provisioner-b98c99578-h76dx)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.4
+(metrics-server-cdcc87586-b27f7)" -> "10.42.0.1";
+  "10.42.0.4
+(metrics-server-cdcc87586-b27f7)" -> "192.168.2.206";
+  "10.42.0.4
+(metrics-server-cdcc87586-b27f7)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.4
+(metrics-server-cdcc87586-b27f7)" -> "192.168.2.171
+(k3sb)";
+  "10.42.2.6
+(instance-manager-cf5c8f665404121485b1298d4e89ec98)" -> "10.42.0.8
+(instance-manager-ef966218c1706378eb2e48ea06fe339e)";
+  "10.42.0.3
+(coredns-7b98449c4-xcz6l)" -> "10.42.0.1";
+  "10.42.0.3
+(coredns-7b98449c4-xcz6l)" -> "192.168.2.209";
+  "10.42.0.3
+(coredns-7b98449c4-xcz6l)" -> "10.42.0.10
+(longhorn-csi-plugin-bdw7b)";
+  "10.42.0.9
+(csi-provisioner-b98c99578-c5tv4)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.10
+(longhorn-csi-plugin-bdw7b)" -> "10.42.0.5";
+  "10.42.0.10
+(longhorn-csi-plugin-bdw7b)" -> "10.42.0.1";
+  "10.42.0.10
+(longhorn-csi-plugin-bdw7b)" -> "10.42.0.3
+(coredns-7b98449c4-xcz6l)";
+  "10.42.1.4
+(longhorn-manager-j7dxl)" -> "10.42.0.5
+(longhorn-manager-qd9ht)";
+  "10.42.0.52
+(falco-falcosidekick-746c76f858-4h944)" -> "10.42.0.1";
+  "10.42.0.53
+(falco-falcosidekick-ui-7bbfd79c5-nxjcb)" -> "10.42.0.1";
+  "10.42.0.53
+(falco-falcosidekick-ui-7bbfd79c5-nxjcb)" -> "10.42.1.44
+(falco-falcosidekick-ui-redis-0)";
+  "10.42.0.13
+(csi-attacher-698944d5b-96rck)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.26
+(kustomize-controller-74fb56995-rkt64)" -> "10.42.0.1";
+  "10.42.0.26
+(kustomize-controller-74fb56995-rkt64)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.11
+(csi-snapshotter-774467fdc7-lkw2g)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.14
+(csi-resizer-7474b7b598-vtgvs)" -> "192.168.2.209
+(k3sa)";
+  "10.42.0.30
+(nats-box-6bcc85cc6c-kbt98)" -> "10.42.0.31
+(nats-0)";
+  "192.168.2.171
+(k3sb)" -> "10.42.0.4
+(metrics-server-cdcc87586-b27f7)";
+  "192.168.2.209
+(k3sa)" -> "10.42.0.4
+(metrics-server-cdcc87586-b27f7)";
+  "192.168.2.206
+(k3sc)" -> "10.42.0.4
+(metrics-server-cdcc87586-b27f7)";
+  "10.42.2.5
+(longhorn-manager-fx9l2)" -> "10.42.0.5
+(longhorn-manager-qd9ht)";
+  "10.43.118.255
+(falco-falcosidekick-ui-redis)" -> "10.42.0.53
+(falco-falcosidekick-ui-7bbfd79c5-nxjcb)";
+  "10.42.0.51
+(falco-p6rsj)" -> "10.42.0.1";
+}

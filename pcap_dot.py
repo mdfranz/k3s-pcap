@@ -1,15 +1,18 @@
 #!/usr/bin/env python3                                                                                                                                                                                                                                       
-import sys, pyshark, pickle,csv
+import sys, pyshark, pickle,csv,time
 from pcapkit import IP, extract
 
-def extract_pcap(input_file,in_flows={},debug=False):
+def extract_pcap(input_file,in_flows={},debug=True):
     e = extract(fin=input_file,nofile=True)
     flows = in_flows
+   
+    if debug:
+      print (f"Found {e.length} packets")
 
     for p in range(0,e.length):
         if IP in e.frame[p]:
             ip = e.frame[p][IP]
-            (src_ip, dst_ip) =  (ip.src,ip.dst)
+            (src_ip, dst_ip) =  (str(ip.src),str(ip.dst))
             if src_ip not in flows:
                 flows[src_ip] = []                         
                 if debug:
@@ -49,22 +52,40 @@ def enrich_dict(data,lookup_file):
         falco-falcosidekick-746c76f858-qgx96,10.42.1.41
         falco-falcosidekick-ui-7bbfd79c5-282tl,10.42.1.42
     """
+    lookup_table = {}
+    out_dict = {}
 
     with open(lookup_file, 'r') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
             name, ip_address = row
             lookup_table[ip_address] = name
-    return lookup_table
 
-def dict_to_dot(data,dotfile="cluster.dot"):
+    print(lookup_table)
+
+    for k in data.keys():
+        print(f"Checking {k} in Lookup") 
+        if k in lookup_table:
+            # Replace keys
+            out_dict[k + "\n("+ lookup_table[k] +")"] = data[k]
+            # inefficient AF
+            for v in data[k]:
+                if v in lookup_table:
+                    data[k].remove(v)
+                    data[k].append(v + "\n("+ lookup_table[v] +")")
+
+    print (out_dict) 
+
+    return(out_dict)
+
+def dict_to_dot(data,dotfile="cluster-"):
     dot_string = "digraph G {\n"
     for node, connections in data.items():
         for connection in connections:
             dot_string += f'  "{node}" -> "{connection}";\n'
     dot_string += "}"
 
-    with open(dotfile, "w") as f:
+    with open(dotfile+str(int(time.time()))+".dot", "w") as f:
         f.write(dot_string)
 
 def pickle_dump(flows, output_file):
@@ -86,4 +107,5 @@ if __name__ == "__main__":
                 loaded_flows = pickle_load(sys.argv[2])
         else:
             f = extract_pcap(sys.argv[1])
-            dict_to_dot(f)
+            g = enrich_dict(f,"lookup.csv")
+            dict_to_dot(g)
