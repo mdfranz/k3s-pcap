@@ -2,6 +2,7 @@
 
 These are network scripts to help visualize networking of homelab K3S clusters
 
+See [Python Packet Libraries](https://github.com/mdfranz/cheetsheetz/blob/main/python/packet.md)
 
 # Installation
 
