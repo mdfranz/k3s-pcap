@@ -48,3 +48,23 @@ Installed 25 packages in 83ms
  + urllib3==2.2.3
  + wcwidth==0.2.13
  ```
+
+## Traffic Captured
+
+I captured traffic on `cni0` and `flannel.1` across multiple nodes, using `mergecap` to combine into a single PCAP and `tcpdump` to convert back from PCAPNG to PCAP.
+
+# Generating Resolution File
+
+Then generated the lookup table with the following commands
+
+```
+kubectl get services -A -o go-template='{{range .items}}{{.metadata.name}},{{.spec.clusterIP}}{{"\n"}}{{end}}'
+```
+
+and
+
+```
+kubectl get pods -A -o go-template='{{range .items}}{{.metadata.name}},{{.status.podIP}}{{"\n"}}{{end}}'
+```
+
+
