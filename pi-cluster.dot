@@ -1,0 +1,301 @@
+digraph G {
+  "instance-manager-e9c6d4b2788e92dcffbadb4b6dee156b
+(10.42.0.8)" -> "instance-manager-ffb1edd8a3a183aa168903fce35025a7
+(10.42.1.6)";
+  "instance-manager-e9c6d4b2788e92dcffbadb4b6dee156b
+(10.42.0.8)" -> "longhorn-manager-hchzj
+(10.42.0.5)";
+  "instance-manager-e9c6d4b2788e92dcffbadb4b6dee156b
+(10.42.0.8)" -> "10.42.0.1";
+  "instance-manager-ffb1edd8a3a183aa168903fce35025a7
+(10.42.1.6)" -> "instance-manager-e9c6d4b2788e92dcffbadb4b6dee156b
+(10.42.0.8)";
+  "instance-manager-ffb1edd8a3a183aa168903fce35025a7
+(10.42.1.6)" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+  "kubernetes
+(10.43.0.1)" -> "longhorn-manager-hchzj
+(10.42.0.5)";
+  "kubernetes
+(10.43.0.1)" -> "user-scheduler-5f7b556d7f-84jqb
+(10.42.0.39)";
+  "kubernetes
+(10.43.0.1)" -> "csi-resizer-7474b7b598-bhp7s
+(10.42.0.15)";
+  "kubernetes
+(10.43.0.1)" -> "csi-snapshotter-774467fdc7-tftql
+(10.42.0.17)";
+  "kubernetes
+(10.43.0.1)" -> "csi-resizer-7474b7b598-4z446
+(10.42.0.16)";
+  "kubernetes
+(10.43.0.1)" -> "operator-6797766f44-gpkb2
+(10.42.0.21)";
+  "kubernetes
+(10.43.0.1)" -> "csi-attacher-698944d5b-vljbv
+(10.42.0.11)";
+  "kubernetes
+(10.43.0.1)" -> "hub-56b989466-hkj27
+(10.42.0.40)";
+  "kubernetes
+(10.43.0.1)" -> "csi-attacher-698944d5b-wk777
+(10.42.0.12)";
+  "kubernetes
+(10.43.0.1)" -> "csi-provisioner-b98c99578-9fk58
+(10.42.0.13)";
+  "kubernetes
+(10.43.0.1)" -> "csi-snapshotter-774467fdc7-k4fkr
+(10.42.0.18)";
+  "kubernetes
+(10.43.0.1)" -> "csi-provisioner-b98c99578-v2ssk
+(10.42.0.14)";
+  "kubernetes
+(10.43.0.1)" -> "coredns-7b98449c4-72tg7
+(10.42.0.3)";
+  "kubernetes
+(10.43.0.1)" -> "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)";
+  "kubernetes
+(10.43.0.1)" -> "local-path-provisioner-595dcfc56f-8g2kx
+(10.42.0.4)";
+  "kubernetes
+(10.43.0.1)" -> "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)";
+  "kubernetes
+(10.43.0.1)" -> "ts-proxy-public-x2dsj-0
+(10.42.1.28)";
+  "kubernetes
+(10.43.0.1)" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+  "kubernetes
+(10.43.0.1)" -> "user-scheduler-5f7b556d7f-rj6kx
+(10.42.1.26)";
+  "kubernetes
+(10.43.0.1)" -> "csi-provisioner-b98c99578-dkvz7
+(10.42.1.8)";
+  "kubernetes
+(10.43.0.1)" -> "csi-resizer-7474b7b598-9d9s6
+(10.42.1.9)";
+  "kubernetes
+(10.43.0.1)" -> "csi-attacher-698944d5b-62h27
+(10.42.1.7)";
+  "kubernetes
+(10.43.0.1)" -> "csi-snapshotter-774467fdc7-fmp7s
+(10.42.1.10)";
+  "longhorn-manager-hchzj
+(10.42.0.5)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "longhorn-manager-hchzj
+(10.42.0.5)" -> "instance-manager-e9c6d4b2788e92dcffbadb4b6dee156b
+(10.42.0.8)";
+  "longhorn-manager-hchzj
+(10.42.0.5)" -> "longhorn-manager-hchzj
+(10.42.0.5)";
+  "longhorn-manager-hchzj
+(10.42.0.5)" -> "10.42.0.1";
+  "longhorn-manager-hchzj
+(10.42.0.5)" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+  "longhorn-manager-hchzj
+(10.42.0.5)" -> "longhorn-csi-plugin-5pkq8
+(10.42.0.19)";
+  "user-scheduler-5f7b556d7f-84jqb
+(10.42.0.39)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "user-scheduler-5f7b556d7f-84jqb
+(10.42.0.39)" -> "10.42.0.1";
+  "csi-resizer-7474b7b598-bhp7s
+(10.42.0.15)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "csi-snapshotter-774467fdc7-tftql
+(10.42.0.17)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "10.42.0.1" -> "hub-56b989466-hkj27
+(10.42.0.40)";
+  "10.42.0.1" -> "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)";
+  "10.42.0.1" -> "coredns-7b98449c4-72tg7
+(10.42.0.3)";
+  "10.42.0.1" -> "instance-manager-e9c6d4b2788e92dcffbadb4b6dee156b
+(10.42.0.8)";
+  "10.42.0.1" -> "longhorn-csi-plugin-5pkq8
+(10.42.0.19)";
+  "10.42.0.1" -> "longhorn-manager-hchzj
+(10.42.0.5)";
+  "10.42.0.1" -> "falco-vgrv4
+(10.42.0.20)";
+  "10.42.0.1" -> "user-scheduler-5f7b556d7f-84jqb
+(10.42.0.39)";
+  "hub-56b989466-hkj27
+(10.42.0.40)" -> "10.42.0.1";
+  "hub-56b989466-hkj27
+(10.42.0.40)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "hub-56b989466-hkj27
+(10.42.0.40)" -> "proxy-867c747549-vl52d
+(10.42.1.25)";
+  "hub-56b989466-hkj27
+(10.42.0.40)" -> "coredns-7b98449c4-72tg7
+(10.42.0.3)";
+  "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)" -> "10.42.0.1";
+  "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)" -> "pi4b-4gb-ae0d0c
+(192.168.3.135)";
+  "coredns-7b98449c4-72tg7
+(10.42.0.3)" -> "10.42.0.1";
+  "coredns-7b98449c4-72tg7
+(10.42.0.3)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "coredns-7b98449c4-72tg7
+(10.42.0.3)" -> "hub-56b989466-hkj27
+(10.42.0.40)";
+  "coredns-7b98449c4-72tg7
+(10.42.0.3)" -> "falco-5jnqb
+(10.42.1.12)";
+  "csi-resizer-7474b7b598-4z446
+(10.42.0.16)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "operator-6797766f44-gpkb2
+(10.42.0.21)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "operator-6797766f44-gpkb2
+(10.42.0.21)" -> "18.159.140.118";
+  "operator-6797766f44-gpkb2
+(10.42.0.21)" -> "209.177.145.120";
+  "operator-6797766f44-gpkb2
+(10.42.0.21)" -> "54.161.152.147";
+  "csi-attacher-698944d5b-vljbv
+(10.42.0.11)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "longhorn-csi-plugin-5pkq8
+(10.42.0.19)" -> "10.42.0.1";
+  "longhorn-csi-plugin-5pkq8
+(10.42.0.19)" -> "longhorn-manager-hchzj
+(10.42.0.5)";
+  "csi-attacher-698944d5b-wk777
+(10.42.0.12)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "csi-provisioner-b98c99578-9fk58
+(10.42.0.13)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "csi-snapshotter-774467fdc7-k4fkr
+(10.42.0.18)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "falco-vgrv4
+(10.42.0.20)" -> "10.42.0.1";
+  "csi-provisioner-b98c99578-v2ssk
+(10.42.0.14)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "longhorn-manager-9r7xw
+(10.42.1.4)" -> "longhorn-manager-hchzj
+(10.42.0.5)";
+  "longhorn-manager-9r7xw
+(10.42.1.4)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "longhorn-manager-9r7xw
+(10.42.1.4)" -> "instance-manager-ffb1edd8a3a183aa168903fce35025a7
+(10.42.1.6)";
+  "longhorn-manager-9r7xw
+(10.42.1.4)" -> "10.42.1.1";
+  "longhorn-manager-9r7xw
+(10.42.1.4)" -> "10.42.0.0";
+  "pi4b-8gb-ead551
+(192.168.3.109)" -> "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)";
+  "pi4b-4gb-ae0d0c
+(192.168.3.135)" -> "metrics-server-cdcc87586-l4xg5
+(10.42.0.2)";
+  "18.159.140.118" -> "operator-6797766f44-gpkb2
+(10.42.0.21)";
+  "18.159.140.118" -> "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)";
+  "18.159.140.118" -> "ts-proxy-public-x2dsj-0
+(10.42.1.28)";
+  "209.177.145.120" -> "operator-6797766f44-gpkb2
+(10.42.0.21)";
+  "209.177.145.120" -> "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)";
+  "209.177.145.120" -> "ts-proxy-public-x2dsj-0
+(10.42.1.28)";
+  "local-path-provisioner-595dcfc56f-8g2kx
+(10.42.0.4)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)" -> "209.177.145.120";
+  "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)" -> "54.161.152.147";
+  "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)" -> "18.159.140.118";
+  "54.161.152.147" -> "operator-6797766f44-gpkb2
+(10.42.0.21)";
+  "54.161.152.147" -> "ts-longhorn-frontend-fp8d5-0
+(10.42.0.23)";
+  "54.161.152.147" -> "ts-proxy-public-x2dsj-0
+(10.42.1.28)";
+  "proxy-api
+(10.43.201.124)" -> "hub-56b989466-hkj27
+(10.42.0.40)";
+  "proxy-867c747549-vl52d
+(10.42.1.25)" -> "hub-56b989466-hkj27
+(10.42.0.40)";
+  "proxy-867c747549-vl52d
+(10.42.1.25)" -> "10.42.1.1";
+  "falco-5jnqb
+(10.42.1.12)" -> "coredns-7b98449c4-72tg7
+(10.42.0.3)";
+  "falco-5jnqb
+(10.42.1.12)" -> "10.42.1.1";
+  "ts-proxy-public-x2dsj-0
+(10.42.1.28)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "ts-proxy-public-x2dsj-0
+(10.42.1.28)" -> "54.161.152.147";
+  "ts-proxy-public-x2dsj-0
+(10.42.1.28)" -> "209.177.145.120";
+  "ts-proxy-public-x2dsj-0
+(10.42.1.28)" -> "18.159.140.118";
+  "10.42.1.1" -> "proxy-867c747549-vl52d
+(10.42.1.25)";
+  "10.42.1.1" -> "longhorn-csi-plugin-p5tkm
+(10.42.1.11)";
+  "10.42.1.1" -> "falco-5jnqb
+(10.42.1.12)";
+  "10.42.1.1" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+  "10.42.1.1" -> "user-scheduler-5f7b556d7f-rj6kx
+(10.42.1.26)";
+  "user-scheduler-5f7b556d7f-rj6kx
+(10.42.1.26)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "user-scheduler-5f7b556d7f-rj6kx
+(10.42.1.26)" -> "10.42.1.1";
+  "longhorn-csi-plugin-p5tkm
+(10.42.1.11)" -> "10.42.1.1";
+  "csi-provisioner-b98c99578-dkvz7
+(10.42.1.8)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "csi-resizer-7474b7b598-9d9s6
+(10.42.1.9)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "csi-attacher-698944d5b-62h27
+(10.42.1.7)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "csi-snapshotter-774467fdc7-fmp7s
+(10.42.1.10)" -> "pi4b-8gb-ead551
+(192.168.3.109)";
+  "longhorn-admission-webhook
+(10.43.67.117)" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+  "longhorn-conversion-webhook
+(10.43.129.213)" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+  "10.42.0.0" -> "longhorn-manager-9r7xw
+(10.42.1.4)";
+}
